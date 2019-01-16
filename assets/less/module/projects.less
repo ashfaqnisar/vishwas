@@ -1,0 +1,539 @@
+
+/*------------------------------------*\
+    #PROJECTS-SECTION
+\*------------------------------------*/
+.projects-filter {
+	margin-top: 50px;
+	margin-bottom: 40px;
+	text-align: center
+}
+
+.projects-filter ul {
+	text-align: center;
+	margin-bottom:0
+}
+
+.projects-filter ul li {
+	margin-right: 30px;
+}
+
+.projects-filter ul li:last-child {
+	margin-right: 0
+}
+
+.projects-filter ul li a {
+	font-size: 13px;
+font-family:@font-heading;
+	text-transform: uppercase;
+color:@color-heading;
+	padding-bottom: 8px;
+	border-bottom: 2px solid transparent;
+	font-weight: bold
+}
+
+.projects-filter ul li a:hover,
+.projects-filter ul li a.active-filter {
+color:@color-theme;
+border-bottom:2px solid @color-theme
+}
+
+.project-item {
+	margin-bottom: 30px;
+}
+
+.project-img {
+	position: relative;
+	overflow: hidden;
+}
+
+.project-img img {
+	display: block;
+	position: relative;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+
+}
+
+.project-img .project-hover {
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 49px;
+	opacity: 0;
+	background-color: rgba(47,47,47, 0.95);
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+}
+
+.project-hover .project-meta {
+	-webkit-transform: translateY(-100px);
+	-moz-transform: translateY(-100px);
+	-o-transform: translateY(-100px);
+	-ms-transform: translateY(-100px);
+	transform: translateY(-100px);
+	opacity: 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.project-hover h6 {
+color:@color-gray6;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.project-hover h4 {
+color:@color-white;
+	font-size: 18px;
+font-family:@font-body;
+	font-weight: bold;
+	text-transform: uppercase
+}
+
+.project-hover .project-zoom {
+	position: absolute;
+	bottom: 49px;
+	opacity: 0;
+	transform: translateY(100px);
+	-webkit-transform: translateY(100px);
+	-moz-transform: translateY(100px);
+	-o-transform: translateY(100px);
+	-ms-transform: translateY(100px);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.project-img:hover img {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
+.project-img:hover .project-hover {
+	opacity: 1
+}
+
+.project-img:hover .project-meta {
+	opacity: 1;
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-o-transform: translateY(0);
+	-ms-transform: translateY(0);
+}
+
+.project-img:hover .project-meta h6 {
+	transition-delay: 0.2s;
+}
+
+.project-img:hover .project-meta h2 {
+	transition-delay: 0.2s;
+}
+
+.project-img:hover .project-zoom {
+	transition-delay: 0.2s;
+	opacity: 1;
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-o-transform: translateY(0);
+	-ms-transform: translateY(0);
+}
+
+.project-meta a {
+color:@color-white
+}
+
+.project-meta a:hover {
+color:@color-theme
+}
+
+/* Projects Full Width*/
+.projects-fullwidth .project-item {
+	margin-bottom: 0;
+	padding-left: 0;
+	padding-right: 0
+}
+
+/* Project Single */
+.project-carousel {
+	margin-bottom: 70px;
+}
+
+.project-carousel .owl-controls {
+	position: absolute;
+	left: 30px;
+	bottom: 30px;
+}
+
+.project-carousel .owl-controls .owl-nav div {
+	width: 27px;
+	height: 71px;
+	line-height: 71px;
+	background-color: @color-heading !important;
+	border-radius: 0 !important;
+	opacity: 1;
+	text-align: center;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.project-carousel .owl-controls .owl-nav div:hover {
+background-color:@color-theme !important;
+	width: 71px;
+}
+
+.project-carousel .owl-controls .owl-nav div i {
+color: @color-white;
+	font-family: FontAwesome;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 28px;
+}
+
+.single-project .project-title {
+	position: relative
+}
+
+.single-project .project-block {
+	padding: 30px;
+	background-color: @color-gray;
+}
+
+.single-project .project-block .project-title:before {
+	content: "";
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	display: inline-block;
+	background-color: @color-dark8;
+}
+
+.single-project .project-title:after {
+	content: "";
+	height: 3px;
+	width: 30px;
+	position: absolute;
+	bottom: 0;
+	display: inline-block;
+background-color:@color-theme;
+}
+
+.single-project .project-title h3 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 25px;
+	text-transform: capitalize;
+	margin-bottom: 28px;
+	padding-bottom: 9px;
+	text-transform: uppercase
+}
+
+.single-project .project-block .project-title h3 {
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: 700;
+	padding-bottom: 15px;
+}
+
+.single-project .project-desc p {
+	color: @color-gray3;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 23px;
+}
+
+.single-project .project-block li {
+	font-family: Raleway;
+	font-size: 14px;
+	line-height: 29px;
+	color: @color-dark6;
+	font-weight: 700;
+}
+
+.single-project .project-block li span {
+	color: @color-gray3;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+.single-project .project-block ul {
+	margin-bottom: 0
+}
+
+/* pager */
+.pager {
+	margin:0
+}
+
+.pager div {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.pager div a {
+	width: 51px;
+	height: 51px;
+	line-height: 51px;
+	border: 2px solid @color-heading;
+	color: @color-heading;
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+}
+
+.pager div:hover a {
+color: @color-white;
+border-color:@color-theme;
+background-color:@color-theme;
+}
+
+.project-widget {
+	margin-bottom: 70px;
+}
+
+.pager-2 div {
+	display: inline-block;
+}
+
+.pager-2 .page-next {
+	float: right;
+}
+
+.pager-2 div a {
+	width: 51px;
+	height: 51px;
+	line-height: 49px;
+	border: 2px solid @color-heading;
+	color: @color-heading;
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+	text-align: center;
+	padding-right: 20px;
+	padding-left: 20px;
+	overflow: hidden;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.pager-2 .page-prev a span {
+	margin-left: 8px;
+	opacity: 0;
+	visibility: hidden;
+color: @color-white;
+font-family:@font-heading;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 49px;
+	text-transform: uppercase;
+	transform: translateX(-60px);
+	-webkit-transform: translateX(-60px);
+	-moz-transform: translateX(-60px);
+	-o-transform: translateX(-60px);
+	-ms-transform: translateX(-60px);
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+}
+
+.pager-2 .page-prev:hover a span {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-o-transform: translateX(0);
+	-ms-transform: translateX(0);
+}
+
+.pager-2 .page-next a span {
+	margin-right: 8px;
+	opacity: 0;
+	visibility: hidden;
+color: @color-white;
+font-family:@font-heading;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 49px;
+	text-transform: uppercase;
+	transform: translateX(100px);
+	-webkit-transform: translateX(100px);
+	-moz-transform: translateX(100px);
+	-o-transform: translateX(100px);
+	-ms-transform: translateX(100px);
+	-webkit-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	display: none
+}
+
+.pager-2 .page-next:hover a span {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0);
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-o-transform: translateX(0);
+	-ms-transform: translateX(0);
+	display: inline-block
+}
+
+.pager-2 div:hover a {
+color: @color-white;
+border-color:@color-theme;
+background-color:@color-theme;
+	width: auto;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.projects-more {
+	width: auto;
+	margin-top: 50px
+}
+
+.projects-more i {
+	margin-left: 8px;
+}
+
+#infscr-loading {
+	position: absolute;
+	bottom: -60px;
+	width: 100%;
+	text-align: center;
+}
+
+/* projects #2 */
+.projects2 .heading p:first-child {
+	color: @color-gray6
+}
+
+.projects2 .heading h2 {
+color:@color-white
+}
+
+.projects2 .projects-filter ul li a {
+	color: #807f7f;
+}
+
+.projects2 .projects-filter ul li a:hover,
+.projects2 .projects-filter ul li a.active-filter {
+color:@color-theme
+}
+
+.projects2 .project-img .project-hover {
+	background-color: rgba(255,197,39, 0.9)
+}
+
+.projects2 .project-hover h6 {
+	color: @color-gray;
+}
+
+.projects2 .project-zoom a {
+	color: @color-heading;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.projects-filter ul li {
+	margin-bottom: 15px;
+	margin-right: 0
+}
+
+.project-img img {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto
+}
+
+.project-carousel .owl-controls {
+	bottom: 10px;
+	left: 10px;
+}
+
+.project-carousel .owl-controls .owl-nav div {
+	height: 40px;
+	line-height: 45px;
+	padding: 0 !important;
+}
+
+.project-carousel .owl-controls .owl-nav div:hover {
+	width: 51px
+}
+
+.pager-2 .page-prev:hover a span,
+.pager-2 .page-next:hover a span {
+	display: none;
+	opacity: 0;
+	visibility: hidden
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+
+.projects-filter ul li {
+	margin-bottom: 15px;
+	margin-right: 0
+}
+
+.project-img img {
+	margin-right: auto;
+	margin-left: auto
+}
+
+.project-carousel .owl-controls {
+	bottom: 10px;
+	left: 10px;
+}
+
+.pager-2 .page-prev:hover a span,
+.pager-2 .page-next:hover a span {
+	display: none;
+	opacity: 0;
+	visibility: hidden
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.projects-filter ul li {
+	margin-bottom: 15px;
+	margin-right: 0
+}
+}
+
+.projects-fullwidth.home-3-custom .projects-filter ul {
+	text-align: right
+}
+
+.projects-fullwidth.home-3-custom .projects-filter ul li {
+	margin-right: 10px;
+}

@@ -1,0 +1,149 @@
+/*-----------------------------------------------------------------------------------
+
+	Theme Name: Yellow Hats
+	Theme URI: #
+	Description: The Construction HTML5 Template
+	Author: 7roof
+	Author URI: http://themeforest.net/user/7roof
+	Version: 1.0
+
+-----------------------------------------------------------------------------------*/
+/*!
+// Contents
+// ------------------------------------------------>
+
+ 1.  Global Styles
+ 2.  Typography
+ 3.  Color
+ 4.  Align
+ 5.  Background
+ 6.  Buttons
+ 7.  Forms
+ 8.  Icons
+ 9.  List
+ 10. Media
+ 11. Tabs
+ 12. Accordions
+ 13. Loading
+ 14. Header
+ 15. Heading
+ 16. Page Title
+ 17. Hero
+ 18. About
+ 19. Team
+ 20. Testimonial
+ 21. Services
+ 22. Projects
+ 23. Action
+ 24. Facts
+ 25. Pricing Tables
+ 26. Blog
+ 27. sidebar
+ 28. Shop
+ 29. Contact
+ 30. Footer
+ 31. 404
+ 32. Soon
+/*------------------------------------*\
+    #GLOBAL STYLES
+\*------------------------------------*/
+
+html {
+ font-size:@font-size-base;
+}
+
+body {
+ background-color:@color-white;
+ font-family:@font-body;
+ font-size:@font-size-base;
+	font-weight: 400;
+ color:@color-body;
+ line-height:@line-height-base;
+	margin: 0
+}
+
+* {
+	outline: none;
+}
+
+::-moz-selection {
+ text-shadow:none;
+}
+
+::selection {
+ background-color:@color-theme;
+	color: #fff;
+	text-shadow: none;
+}
+
+a {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+ color:@color-theme;
+ &:hover {
+ color:darken(@color-theme, 10%);
+ text-decoration:none;
+}
+ &:focus {
+ color:darken(@color-theme, 10%);
+ outline:none;
+ text-decoration:none;
+}
+ &:active {
+ color:darken(@color-theme, 10%);
+ outline:none;
+ text-decoration:none;
+}
+}
+
+textarea {
+	resize: none
+}
+
+.form-control {
+	background-color: transparent;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border-top: none;
+	border-right: 0;
+	border-left: 0;
+	border-bottom: 2px solid #e5e5e5;
+	font-size: 13px;
+	color: #a9a9a9;
+	line-height: 49px;
+	height: 49px;
+	margin-bottom: 50px;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	padding-left: 0;
+}
+
+.form-control:focus {
+ border-bottom-color:@color-theme;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+button.btn {
+	margin-bottom: 0
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn.active.focus {
+	outline: none
+}
+
+.modal-backdrop {
+	z-index: 1020;
+	background-color: rgba(34, 34, 34, 0.95);
+}

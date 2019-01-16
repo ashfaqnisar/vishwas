@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #FACTS-SECTION
+\*------------------------------------*/
+.shortcode-4 .counter {
+	font-size: 30px;
+font-family:@font-heading;
+color:@color-heading;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.shortcode-4 h4 {
+	font-size: 13px;
+color:@color-secondary;
+	font-weight: 300;
+	margin-bottom: 0
+}
+
+.shortcode-4 .facts-box:after,
+.shortcode-9 .brand:after {
+	content: "";
+	width: 2px;
+	height: 30px;
+	background-color: @color-gray9;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	right: 0
+}
+
+.shortcode-4 .facts-box.last:after,
+.shortcode-9 .brand.last:after {
+	width: 0;
+	height: 0;
+	opacity: 0
+}

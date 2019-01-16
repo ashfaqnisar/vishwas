@@ -1,0 +1,82 @@
+
+/*------------------------------------*\
+    #CONTACT-PAGE
+\*------------------------------------*/
+.contact {
+	padding-top: 60px;
+}
+
+.contact .widgets-contact {
+	background-color: transparent;
+	padding-top: 0;
+	padding-bottom: 0
+}
+
+.contact .widgets-contact .widget {
+	margin-bottom: 70px;
+	padding-left: 0;
+	border-left: none
+}
+
+.contact .widgets-contact .widget-contact-icon {
+	margin-left: 0;
+}
+
+.contact .widgets-contact .widget-contact-icon i {
+color:@color-theme
+}
+
+.contact .widgets-contact .widget-contact-icon:after {
+background-color:@color-dark2;
+}
+
+.contact form {
+	margin-bottom: 0
+}
+
+button.btn:hover {
+background-color:@color-theme;
+border-color:@color-theme;
+}
+
+#contact-form label.error {
+	position: absolute;
+	top: -14px;
+	font-size: 11px;
+	color: #a94442
+}
+
+#quote-form label.error,
+#pop-quote-form label.error,
+#pop-quote-form2 label.error,
+#head-quote-form label.error {
+	top: -14px;
+	font-size: 11px;
+	color: #a94442
+}
+
+input[aria-invalid="true"] {
+	border-bottom: 2px solid #a94442 !important
+}
+
+#quote-result .alert {
+	padding: 10px;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+#pop-quote-result,
+#pop-quote-result2,
+#head-quote-result{
+	text-align: left !important;
+	font-size: 14px;
+}
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.contact .widgets-contact .widget {
+	margin-bottom: 30px;
+}
+}

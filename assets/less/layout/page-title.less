@@ -1,0 +1,151 @@
+/*------------------------------------*\
+    #PAGE-TTILE
+\*------------------------------------*/
+.page-title {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.page-title h2 {
+	color:@color-white;
+	text-transform: uppercase;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 34px;
+	position: relative;
+	z-index: 3;
+	padding-top: 31px;
+	padding-bottom: 31px;
+	margin-bottom: 0
+}
+
+.page-title .breadcrumb {
+	background-color: transparent;
+	padding-top: 30px;
+	padding-bottom: 0;
+	margin-bottom: 0
+}
+
+.page-title .breadcrumb a {
+	color:@color-white;
+	font-family:@font-heading;
+	line-height: 24px;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.page-title .breadcrumb a:hover {
+ color:@color-theme
+}
+
+.page-title .breadcrumb .active {
+	color:@color-theme;
+	font-family:@font-heading;
+	line-height: 24px;
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.page-title .title-bg:before {
+	content: "";
+	width: 70px;
+	height: 96px;
+	background-color: @color-theme;
+	position: absolute;
+	display: block;
+	left: 50%;
+	margin-left: -35px;
+	text-align: center;
+}
+
+.page-title.title-2 .title-bg:before {
+	background-color: @color-heading;
+	height: 116px;
+}
+
+.page-title.title-2 h2 {
+	margin-bottom: 0;
+	padding-top: 26px;
+	padding-bottom: 18px;
+}
+
+.page-title.title-2 .breadcrumb {
+	position: relative;
+	z-index: 3;
+	padding-top: 0;
+	line-height: 1
+}
+
+.page-title.title-3 h2 {
+	margin-bottom: 18px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.page-title.title-3 .breadcrumb {
+	padding-top: 0
+}
+
+.page-title.title-4 h2 {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0
+}
+
+.page-title.title-4 .breadcrumb {
+	padding-top: 0;
+	line-height: 34px;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.page-title h2 {
+	font-size: 30px;
+}
+
+.page-title .breadcrumb {
+	padding-top: 20px;
+}
+
+.page-title.title-4 {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center
+}
+
+.page-title.title-4 .pull-left {
+	float: none !important
+}
+
+.page-title.title-4 .breadcrumb {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	width: 100%;
+	margin-top: 15px;
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+
+.page-title h2 {
+	font-size: 36px;
+}
+
+.page-title .breadcrumb {
+	padding-top: 25px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.page-title h2 {
+	font-size: 40px;
+}
+}

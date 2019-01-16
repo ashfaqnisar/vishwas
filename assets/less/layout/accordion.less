@@ -1,0 +1,75 @@
+
+/*------------------------------------*\
+    #ACCORDION
+\*------------------------------------*/
+.accordion .panel {
+border-color: rgba(49, 49, 49, 0.1);
+	padding:23px 23px 0 23px;
+	margin-bottom: 20px;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+}
+
+.accordion .panel .panel-heading {
+	background-color: transparent;
+	padding: 0 0 23px 0;
+}
+
+.accordion .panel .panel-heading h4 {
+	font-size: 16px;
+ font-family:@font-body;
+color: @color-dark6;
+	line-height: 1;
+	font-weight:700;
+}
+
+.accordion .panel-heading {
+	-moz-border-radius:0;
+	-webkit-border-radius:0;
+	border-radius:0;
+}
+.accordion .panel-heading a { line-height:30px;}
+
+.accordion .panel-heading a:hover,
+.accordion .panel-heading a:focus,
+.accordion .panel-heading a:active {
+	text-decoration: none
+}
+
+.accordion .panel-heading .accordion-toggle:after {
+	content: "\f068";   		/* symbol for "opening" panels */
+	float: right;
+ font-family:@awesome-font;
+	font-size: 10px;
+ color:@color-white;
+ background-color:@color-theme;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:1px;
+}
+
+.accordion .panel-heading .accordion-toggle.collapsed:after {
+	content: "\f067";    /* symbol for "collapsed" panels */
+color:@color-theme;
+	background-color: transparent;
+}
+
+.accordion .panel .panel-body {
+	border-top-color:rgba(49, 49, 49, 0.1);
+	padding: 20px 0;
+	color: @color-gray3;
+	font-family: @font-body;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 25px;
+}

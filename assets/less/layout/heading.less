@@ -1,0 +1,143 @@
+
+/*------------------------------------*\
+    #HEADING
+\*------------------------------------*/
+.heading {
+	margin-bottom:50px;
+}
+
+.heading h2 {
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height:1;
+	margin-bottom:0;
+	padding-bottom:19px;
+}
+
+.heading h2:after {
+	content: ".";
+ color:@color-theme;
+	font-size: 35px;
+	display: inline-block;
+}
+
+.heading p {
+	margin-bottom: 0
+}
+
+.heading p:first-child {
+	font-size: 14px;
+	text-transform: capitalize;
+color:@color-secondary;
+	font-weight: 500;
+	line-height:1;
+	padding-top:20px;
+	padding-bottom:10px;
+}
+
+.heading p:last-child,.heading-p {
+	font-size: 14px;
+	font-weight: normal;
+color: @color-dark11;
+font-family:@font-secondary;
+font-style: italic;
+line-height:23px;
+}
+
+.heading-bg { margin-bottom:20px;}
+.heading-bg:before {
+	content: "";
+	width: 70px;
+	height: 96px;
+border:2px solid @color-theme;
+	position: absolute;
+	display: block;
+	left: 50%;
+	margin-left: -35px;
+	text-align: center;
+}
+
+.heading-bg h2,
+.heading-bg p {
+	z-index: 3;
+	position: relative
+}
+
+.heading-1 p:first-child { padding-top:0}
+.heading-3 .heading-bg,.heading-4 .heading-bg,.heading-5 .heading-bg { margin-bottom:0}
+
+.heading-bg.heading-right:before {
+	left: auto;
+	margin-left: 0
+}
+
+.heading-bg.heading-right h2,
+.heading-bg.heading-right p {
+	padding-left: 35px;
+}
+
+.heading-bg.heading-left:before {
+	left: auto;
+	right: 0;
+	margin-right: 0
+}
+
+.heading-bg.heading-left h2,
+.heading-bg.heading-left p {
+	text-align: right;
+	padding-right: 20px;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.heading {
+	text-align: center
+}
+
+.heading h2 {
+	font-size: 30px
+}
+
+.heading-bg.heading-right:before,
+ .heading-bg.heading-left:before {
+	left: 50%;
+	margin-left: -35px;
+}
+
+.heading-bg.heading-left h2,
+.heading-bg.heading-left p {
+	text-align: center;
+	padding-right: 0;
+}
+
+.heading-bg.heading-right h2,
+.heading-bg.heading-right p {
+	text-align: center;
+	padding-left: 0
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+	.heading-bg.heading-right h2,
+.heading-bg.heading-right p {
+	text-align: left;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+	.heading-bg.heading-right:before,
+ .heading-bg.heading-left:before {
+	left: 50%;
+	margin-left: -35px;
+}
+.heading-bg.heading-right h2,
+.heading-bg.heading-right p {
+	text-align: center;
+	padding-left: 0
+}
+}
+

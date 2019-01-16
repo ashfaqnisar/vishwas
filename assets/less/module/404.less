@@ -1,0 +1,86 @@
+/*------------------------------------*\
+    #404
+\*------------------------------------*/
+.error-page {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+.error-page h1 {
+	font-family: @font-heading;
+	font-size: 135px;
+	font-weight: 700;
+	line-height: 99px;
+	text-transform: uppercase;
+	color: @color-heading;
+	position: relative;
+	z-index: 99;
+	padding-top: 50px;
+	margin-bottom: 0
+}
+
+.error-page h1:after {
+	content: ".";
+	color:@color-theme;
+	font-size: 135px;
+	display: inline-block
+}
+
+.error-page .error-title:before {
+	content: "404";
+	color: rgba(47, 47, 47, 0.07);
+	font-size: 200px;
+	font-family:@font-heading;
+	font-weight: 700;
+	display: inline-block;
+	position: absolute;
+	margin-top: -80px;
+	margin-left: -220px;
+}
+
+.error-page p {
+	color: @color-dark11;
+	font-family:@font-secondary;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 23px;
+	margin-bottom: 50px;
+}
+
+.error-page .btn-primary {
+	margin-right: 30px;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.error-page .btn-primary {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	display: block;
+	margin-bottom: 15px;
+}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+
+.error-page h1 {
+	font-size: 100px
+}
+
+.error-page .error-title:before {
+	font-size: 150px;
+	margin-top: 18px;
+	margin-left: -155px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.error-page .error-title:before {
+	margin-top: 0px;
+	margin-left: -214px;
+}
+}

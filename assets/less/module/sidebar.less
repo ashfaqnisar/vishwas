@@ -1,0 +1,429 @@
+
+/*------------------------------------*\
+	#SIDEBAR-SECTION
+\*------------------------------------*/
+.sidebar {
+	padding: 50px;
+	border: 1px solid @color-gray5;
+}
+
+.sidebar .widget {
+	margin-bottom: 70px;
+}
+
+.sidebar .widget:last-of-type {
+	margin-bottom: 0;
+}
+
+
+.sidebar .widget-search .form-search {
+	border: 2px solid @color-gray5;
+	padding: 0 10px;
+	height: 51px;
+}
+
+.sidebar .widget-search .form-search .form-control {
+	border: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	color: @color-gray3;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 22px;
+	text-transform: capitalize
+}
+
+.sidebar .widget-search .form-search .btn {
+ background-color:@color-theme;
+ color:@color-white;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	width: 35px;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	font-size: 14px;
+	margin-left: 0;
+	padding: 0
+}
+
+.sidebar .widget-search .form-search .btn:hover {
+ background-color:@color-heading;
+ border-color:@color-heading;
+}
+
+.sidebar .widget .widget-title {
+	position: relative;
+	margin-bottom: 30px
+}
+
+.sidebar .widget .widget-title:before {
+	content: "";
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	display: inline-block;
+	background-color: @color-dark8;
+}
+
+.sidebar .widget .widget-title:after {
+	content: "";
+	height: 3px;
+	width: 30px;
+	position: absolute;
+	bottom: 0;
+	display: inline-block;
+ background-color:@color-theme;
+}
+
+.sidebar .widget .widget-title h3 {
+	font-size: 16px;
+ font-family:@font-body;
+	font-weight: bold;
+	text-transform: capitalize;
+	line-height:1;
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+}
+
+.widget-categories li {
+	background-color: @color-gray10;
+	padding: 20px;
+	margin-bottom: 5px;
+}
+
+.widget-categories li a {
+	color: @color-gray4;
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.widget-categories li.active {
+ background-color:@color-theme;
+}
+
+.widget-categories li.active a {
+ color:@color-white
+}
+
+.widget-categories li a:before {
+	content: "\f067";
+ font-family:@awesome-font;
+	margin-right: 8px;
+}
+
+.widget-categories li:hover {
+ background-color:@color-theme;
+}
+
+.widget-categories li:hover a {
+ color:@color-white
+}
+
+.widget-tags ul { margin-bottom:0; margin-left:0}
+.widget-tags ul li {
+	padding-left: 0;
+	padding-right: 0
+}
+
+.widget-tags a {
+	font-size: 12px;
+	color: @color-gray6;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: 2px solid @color-gray5;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-transform: capitalize
+}
+
+.widget-tags a:hover {
+ background-color:@color-theme;
+ color:@color-white;
+ border:2px solid @color-theme
+}
+
+.widget-recent .recent-entry,
+ .widget-best-product .best-product {
+	position: relative;
+	margin-bottom: 20px;
+}
+ .widget-recent .recent-entry:last-of-type, .widget-best-product .best-product:last-of-type, {
+ margin-bottom: 0
+}
+
+.widget-recent .recent-entry img,
+ .widget-best-product .best-product .product-img {
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.widget-recent .recent-entry .recent-desc,
+ .widget-best-product .best-product .product-bio {
+	position: relative;
+	margin-left: 85px;
+}
+
+.widget-recent .recent-entry .recent-desc .entry-category {
+	margin-bottom: 10px;
+ font-family:@font-secondary;
+	font-size: 13px;
+	font-style: italic;
+	line-height: 1;
+	font-weight: 600
+}
+
+.widget-recent .recent-entry .recent-desc .entry-category a {
+ font-family:@font-secondary;
+ color:@color-heading;
+	text-transform: capitalize;
+	font-size: 13px;
+}
+
+.widget-recent .recent-entry .recent-desc a,
+ .widget-best-product .best-product a {
+	color: @color-dark6;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform:uppercase;
+}
+
+.widget-recent .recent-entry .recent-desc .recent-statics {	padding-bottom: 17px;}
+.widget-recent .recent-entry .recent-desc .recent-statics,
+ .widget-best-product .best-product .product-bio {
+	border-bottom: 1px solid @color-dark8;
+	padding-top:6px;
+
+}
+
+.widget-recent .recent-entry:last-of-type .recent-statics,
+ .widget-best-product .best-product:last-of-type .product-bio {
+	border-bottom: none;
+	padding-bottom:0
+}
+
+.single-post .sidebar,
+ .single-service .sidebar,
+ .sidebar.sidebar-full {
+	border: none;
+	padding: 0 15px;
+}
+
+.sidebar .download {
+ background-color:@color-theme;
+	padding: 24px;
+	position: relative;
+	height: 74px;
+}
+
+.sidebar .download .download-desc {
+	position: absolute;
+	top: 0
+}
+
+.sidebar .download .download-desc h4 {
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 50px;
+	text-transform: uppercase;
+	margin-bottom: 0
+}
+
+.sidebar .download .download-icon {
+	float: right;
+}
+
+.sidebar .download .download-icon i {
+ color:@color-white;
+	font-size: 24px;
+	line-height: 24px;
+	border-left: 2px solid @color-dark9;
+	padding-left: 24px;
+}
+
+.sidebar .download.download-pdf {
+	margin-bottom: 20px;
+}
+
+.widget-best-product .best-product .product-img {
+	width: 70px;
+	height: 70px;
+	background-color: @color-gray10;
+	-moz-border-radius: 1px 1px 0;
+	-webkit-border-radius: 1px 1px 0;
+	border-radius: 1px 1px 0;
+	text-align: center;
+	padding: 4px;
+}
+
+.widget-best-product .best-product .product-bio {
+	padding-top: 0
+}
+
+.widget-best-product .best-product .product-bio .product-price {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 23px;
+}
+
+.widget-best-product .best-product a {
+	text-transform: uppercase
+}
+
+/* fiter product */
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+ .ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+
+.widget-filter .ui-slider {
+	height: 4px;
+	background-color: rgba(49, 49, 49, 0.1);
+	margin-bottom: 20px;
+}
+
+.widget-filter .ui-slider-handle {/* Style for "Line" */
+	width: 8px;
+	height: 8px;
+	background-color: @color-dark6;
+	top: -2px;
+	margin-left: 0
+}
+
+.widget-filter .ui-slider-range {
+	height: 4px;
+	background-color: @color-theme;
+	margin-bottom: 20px;
+}
+
+.widget-filter p {
+	font-family: Raleway;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 36px;
+}
+
+.widget-filter label {
+	color: @color-gray3;
+}
+
+.widget-filter input {
+	color: @color-theme;
+	border: none;
+}
+
+.widget-filter .btn {
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 49px;
+	text-transform: uppercase;
+	border: 2px solid @color-heading;
+	padding: 0 14px;
+	width: auto
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.sidebar {
+	padding: 15px;
+}
+
+.sidebar .widget:last-of-type {
+	margin-bottom: 0
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+}

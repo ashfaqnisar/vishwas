@@ -1,0 +1,223 @@
+
+/*------------------------------------*\
+    #TEAM-SECTION
+\*------------------------------------*/
+.member {
+	margin-bottom: 60px;
+	overflow: hidden;
+	position: relative
+}
+
+.member .member-bio {
+	text-align: center;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.member .member-bio h3 {
+	color: @color-dark6;
+	font-family: Montserrat;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+.member .member-bio p {
+	color: @color-secondary;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1px;
+	text-transform: capitalize
+}
+
+.member .member-img {
+	position: relative;
+	margin-bottom: 29px;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.member .member-img img {
+	max-width: 100%;
+	height: auto;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.member .member-overlay {
+	text-align: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.member .member-bg {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	top: 76px;
+	background-image: -webkit-linear-gradient(180deg, @color-theme 0%, transparent 49%, transparent 82%, transparent 100%);
+	background-image: -o-linear-gradient(180deg, @color-theme 0%, transparent 49%, transparent 82%, transparent 100%);
+	background-image: -moz-linear-gradient(180deg, @color-theme 0%, transparent 49%, transparent 82%, transparent 100%);
+	background-image: linear-gradient(180deg, @color-theme 0%, transparent 49%, transparent 82%, transparent 100%);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.member .member-bg:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 76px;
+	background-color: @color-theme;
+	height: 76px;
+	top: -76px;
+}
+
+.member .member-overlay a {
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 28px;
+color:@color-white;
+	margin-right: 35px;
+}
+
+.member .member-overlay a:hover {
+color:@color-heading
+}
+
+.member.member-overlay a:last-child {
+	margin-right: 0
+}
+
+/* hover */
+
+.member:hover .member-bio {
+	transform: translateY(76px);
+	-webkit-transform: translateY(76px);
+	-moz-transform: translateY(76px);
+	-o-transform: translateY(76px);
+	-ms-transform: translateY(76px);
+}
+
+.member:hover .member-img img {
+	transform: translateY(76px);
+	-webkit-transform: translateY(76px);
+	-moz-transform: translateY(76px);
+	-o-transform: translateY(76px);
+	-ms-transform: translateY(76px);
+}
+
+.member:hover .member-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+.member:hover .member-bg {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* member #2 */
+.member-2 {
+	padding-right: 0;
+	padding-left: 0
+}
+
+.member-2 .member-img {
+	position: relative;
+	overflow: hidden;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.member-2 .member-img img {
+	max-width: 100%;
+	height: auto;
+	-webkit-transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+}
+
+.member-2 .member-overlay {
+	padding: 50px 30px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	opacity: 0;
+	visibility: hidden;
+	left: -200px;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+}
+
+.member-2:hover .member-overlay {
+	opacity: 1;
+	visibility: visible;
+	left: 0
+}
+
+.member-2 .member-info {
+	padding: 50px 30px;
+background-color:@color-theme;
+}
+
+.member-2 .member-bio h3 {
+	color: @color-dark6;
+	font-family: Montserrat;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+.member-2 .member-bio p {
+	color: @color-secondary;
+	font-family: Raleway;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1px;
+	text-transform: capitalize;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+.member-2 .member-social i {
+	width: 42px;
+	height: 42px;
+	background-color: @color-dark3;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+	color: white;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 42px;
+}
+
+.member-2 .member-social i:hover {
+background-color:@color-white;
+color:@color-theme
+}

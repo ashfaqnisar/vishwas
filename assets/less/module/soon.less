@@ -1,0 +1,204 @@
+
+/*------------------------------------*\
+    #SOON
+\*------------------------------------*/
+.soon-page {
+	padding-top: 184px;
+	padding-bottom: 184px;
+}
+
+.soon-page h1 {
+	font-size: 65px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.soon-page h1:after {
+	content: ".";
+ color:@color-theme;
+	font-size: 65px;
+	display: inline-block
+}
+
+.soon-page p {
+	color: @color-dark11;
+ font-family: @font-secondary;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 23px;
+	margin-bottom: 70px;
+}
+
+/* jQuery Countdown styles 2.0.0. */
+.is-countdown {
+}
+
+.countdown-rtl {
+	direction: rtl;
+}
+
+.countdown-holding span {
+	color: @color-dark13;
+}
+
+.countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0px 2px;
+	text-align: center;
+}
+
+.countdown-show1 .countdown-section {
+	width: 98%;
+}
+
+.countdown-show2 .countdown-section {
+	width: 48%;
+}
+
+.countdown-show3 .countdown-section {
+	width: 32.5%;
+}
+
+.countdown-show4 .countdown-section {
+	width: 24.5%;
+}
+
+.countdown-show5 .countdown-section {
+	width: 19.5%;
+}
+
+.countdown-show6 .countdown-section {
+	width: 16.25%;
+}
+
+.countdown-show7 .countdown-section {
+	width: 14%;
+}
+
+.countdown-section {
+	display: block;
+	float: right;
+	text-align: center;
+	position: relative
+}
+
+.countdown-section:after {
+	content: "";
+	width: 2px;
+	height: 30px;
+	background-color: @color-gray9;
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	right: 0
+}
+
+.countdown-row span:nth-of-type(1):after {
+	width: 0;
+	height: 0;
+	opacity: 0
+}
+
+.countdown-amount {
+	font-size: 30px;
+	font-weight: bold;
+ font-family:@font-heading;
+ color:@color-heading;
+	margin-bottom: 20px;
+}
+
+.countdown-period {
+	display: block;
+ color:@color-secondary;
+	font-size: 13px;
+ font-family:@font-heading;
+	text-transform: uppercase;
+}
+
+.countdown-descr {
+	display: block;
+	width: 100%;
+}
+
+/*------------------------------------*\
+	#MAINTENACE
+	\*------------------------------------*/
+.mainten-page {
+	padding-top: 188px;
+	padding-bottom: 188px;
+}
+
+.mainten-page h1 {
+	font-size: 100px;
+	font-weight: 700;
+	line-height: 1;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.mainten-page h1:after {
+	content: ".";
+ color:@color-theme;
+	font-size: 65px;
+	display: inline-block
+}
+
+.mainten-page p {
+	color: @color-dark11;
+ font-family: @font-secondary;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 23px;
+	margin-bottom: 47px
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) and (max-width : 479px) {
+
+.mainten-page h1,
+.soon-title h1 {
+	font-size: 34px;
+}
+
+.mainten-page,
+.soon-page {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px)and (max-width : 767px ) {
+
+.mainten-page h1,
+.soon-title h1 {
+	font-size: 54px;
+}
+
+.mainten-page,
+.soon-page {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+.mainten-page h1,
+.soon-title h1 {
+	font-size: 84px;
+	line-height: 1
+}
+
+.mainten-page,
+.soon-page {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+}
